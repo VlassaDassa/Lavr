@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная страница</title>
+        <link rel="stylesheet" href="{% static 'css/general.css' %}">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="topHeader">
+            <div class="container">
+                <div class="topHeader-wrapper">
+                    <p class="topHeader-text">171252, Тверская область, г. Конаково, ул. Учебная, д.19. 8(48242 4-31-98 )</p>
+                    <div class="headerButtonsWrapper">
+                        <button class="topHeader-btn">Перейти на основной сайт </button>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="bottomHeader">
+                <a class="logo" href="{% url 'main' %}"><img src="{% static 'img/logo.png' %}" class="logoImg" /></a>
+                <p class="bottomHeader-text">
+                     Государственное казённое учреждение здравоохранения Тверской области
+                     "Конаковский специализированный Дом ребёнка для детей с органическим поражением
+                     центральной нервной системы с нарушением психики"
+                </p>
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="container">
+                <h1 class="title">Доступные тесты</h1>
+
+                <div class="allButtons">
+                    <div class="testsWrapper">
+                    </div>
+    
+                    <div class="adminButtons">
+                        <a class="testItem admin" href="/admin">Создать тест</a>
+    
+                        <div class="admin reportttt">
+                            <button class="reportByCode">Отчёт по коду</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+        </main>
+
+        <div class="container">
+            <div class="footerTop">
+                <div class="footerColumn">
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/mail.svg' %}" />
+                        <p class="footerRow-text">mail@ksdr.org</p>
+                    </div>
+
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/phone.svg' %}" />
+                        <p class="footerRow-text">8(48242) 4-04-16</p>
+                    </div>
+
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/phone.svg' %}" />
+                        <p class="footerRow-text">8(48242) 4-31-96</p>
+                    </div>
+
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/location.svg' %}" />
+                        <p class="footerRow-text">8(48242) 4-31-96</p>
+                    </div>
+                </div>
+
+                <div class="footerColumn">
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/home.svg' %}" />
+                        <a href="{% url 'main' %}" class="footerRow-text">Главная</a>
+                    </div>
+
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/test.svg' %}" />
+                        <p class="footerRow-text">Тесты</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footerBottom">
+            © 2024 ГКУЗ "КСДР"
+        </footer>
+
+        <div class="overlay"></div>
+
+        <!-- Поиск по коду -->
+        <div class="reportWrapper">
+            <div class="reportTitle">Отчёт по пользователю</div>
+
+            <div class="inputWrapper">
+                <label for="find_by_code">Введите код</label>
+                <input class="reportInput" type="text" id="find_by_code">
+            </div>
+            <button class="inputBtn">Поиск</button>
+
+            <span class="closeReport">&times;</span>
+        </div>
+
+        <!-- Отчёт по пользователю -->
+        <div class="reportWrapperData">
+            <div class="reportTitle">Пользователь - 064</div>
+
+            <div class="successTests">
+                <div class="successTestsTitle">Пройденные тесты</div>
+                <div class="userTest">Пройденные тесты - 50%</div>
+                <div class="userTest">Пройденные тесты - 50%</div>
+            </div>
+
+            <div class="errors">
+                Ошибок: <span class="erorrCount">25</span>
+            </div>
+
+            <div class="questionsWithError">
+                <div class="questionsWithErrorTitle">Вопросы с ошибками</div>
+                <div class="questionsWithErrorItems">Какой-то вопрос</div>
+                <div class="questionsWithErrorItems">Какой-то вопрос №2</div>
+                <div class="questionsWithErrorItems">Какой-то вопрос №2</div>
+                <div class="questionsWithErrorItems">Какой-то вопрос №2</div>
+                <div class="questionsWithErrorItems">Какой-то вопрос №2</div>
+                <div class="questionsWithErrorItems">Какой-то вопрос №2</div>
+                <div class="questionsWithErrorItems">Какой-то вопрос №2</div>
+            </div>
+
+            <span class="closeReport">&times;</span>
+        </div>
+
+        <script src="{% static 'js/index.js' %}"></script>
+    </body>
+</html>
+
+
+
+

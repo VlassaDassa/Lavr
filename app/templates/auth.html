@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Авторизация</title>
+        <link rel="stylesheet" href="{% static 'css/general.css' %}">
+        <link rel="stylesheet" href="{% static 'css/auth.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="topHeader">
+            <div class="container">
+                <div class="topHeader-wrapper">
+                    <p class="topHeader-text">171252, Тверская область, г. Конаково, ул. Учебная, д.19. 8(48242 4-31-98 )</p>
+                    <div class="headerButtonsWrapper">
+                        <button class="topHeader-btn">Перейти на основной сайт </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="bottomHeader">
+                <a class="logo" href="{% url 'main' %}"><img src="{% static 'img/logo.png' %}" class="logoImg" /></a>
+                <p class="bottomHeader-text">
+                     Государственное казённое учреждение здравоохранения Тверской области
+                     "Конаковский специализированный Дом ребёнка для детей с органическим поражением
+                     центральной нервной системы с нарушением психики"
+                </p>
+            </div>
+        </div>
+
+
+        <main class="main">
+            <div class="container">
+                <div class="authWrapper">
+                    <img class="authWrapper-background" src="{% static 'img/testImg_1.jpg' %}">
+                    
+                    <div class="authFormContainer">
+                        <h1 class="title">Авторизация</h1>
+                        <p class="authFormText">Пожалуйста введите ваш ключ-код</p>
+                        <input type="text" class="authFormField">
+                        <button class="authFormBtn">Войти</button>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        
+
+        <div class="container">
+            <div class="footerTop">
+                <div class="footerColumn">
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/mail.svg' %}" />
+                        <p class="footerRow-text">mail@ksdr.org</p>
+                    </div>
+
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/phone.svg' %}" />
+                        <p class="footerRow-text">8(48242) 4-04-16</p>
+                    </div>
+
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/phone.svg' %}" />
+                        <p class="footerRow-text">8(48242) 4-31-96</p>
+                    </div>
+
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/location.svg' %}" />
+                        <p class="footerRow-text">8(48242) 4-31-96</p>
+                    </div>
+                </div>
+
+                <div class="footerColumn">
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/home.svg' %}" />
+                        <a href="{% url 'main' %}" class="footerRow-text">Главная</a>
+                    </div>
+
+                    <div class="footerRow">
+                        <img class="footerRow-img" src="{% static 'img/test.svg' %}" />
+                        <p class="footerRow-text">Тесты</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footerBottom">
+            © 2024 ГКУЗ "КСДР"
+        </footer>
+
+        <script src="{% static 'js/auth.js' %}"></script>
+    </body>
+</html>
+
+
+
+

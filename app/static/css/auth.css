@@ -1,0 +1,192 @@
+
+
+body {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    padding: 0 150px;
+    height: 100%;
+}
+
+
+/* TopHeader */
+.topHeader {
+    height: 40px;
+    width: 100%;
+
+    background: #5E6EFD;
+
+    font-weight: bold;
+}
+
+.topHeader-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+}
+
+.topHeader-btn {
+    padding: 5px 20px;
+
+    background: white;
+    color: #5E6EFD;
+    border-radius: 50px;
+
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.topHeader-btn:hover {
+    opacity: 0.7;
+}
+/* ./TopHeader */
+
+
+
+/* BottomHeader */
+.bottomHeader {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    font-size: 20px;
+    background: #8993EB;
+    color: white;
+
+    padding: 30px 50px;
+}
+
+.logo {
+    height: 200px;
+    width: 250px;
+}
+
+.logoImg {
+    width: 100%;
+}
+/* ./BottomHeader */
+
+
+/* Main */
+.authWrapper {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border-radius: 50px;
+
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.authWrapper-background {
+    position: absolute;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+}
+
+.authFormContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.authFormText,
+.title {
+    text-align: center;
+}
+
+.authFormText {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.authFormField {
+    background: white;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    border: 5px solid #EFC42B;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.authFormBtn {
+    display: block;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-size: 24px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-weight: bold;
+    background: #EFC42B;
+
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.authFormBtn:hover {
+    opacity: 0.7;
+}
+
+/* ./Main */
+
+
+
+/* footer */
+.footerTop {
+    display: flex;
+    column-gap: 300px;
+    padding: 30px 50px;
+    background: #8993EB;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footerRow {
+    display: flex;
+    column-gap: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.footerRow:hover {
+    opacity: 0.7;
+}
+
+.footerRow-img {
+    width: 30px;
+}
+
+.footerBottom {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerBottom {
+    background: #5E6EFD;
+    font-weight: bold;
+}
+/* ./footer */
+
